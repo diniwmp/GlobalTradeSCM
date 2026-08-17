@@ -1,4 +1,4 @@
-# 🌍 GlobalTrade SCM
+# 🌍 GlobalTradeSCM
 
 ### Enterprise Global Supply Chain Management System
 
@@ -41,53 +41,3 @@ The main objectives of GlobalTrade SCM are to:
 - Support modular deployment and independent service updates.
 - Demonstrate enterprise-level Java development best practices.
 
----
-
-## 🏗️ Architecture
-
-The system follows a **multi-module Enterprise Java architecture**.
-
-```text
-                    ┌──────────────────────────┐
-                    │        Web Browser       │
-                    └────────────┬─────────────┘
-                                 │
-                                 ▼
-                    ┌──────────────────────────┐
-                    │        SCM Web           │
-                    │   JSP / Servlet / UI     │
-                    └────────────┬─────────────┘
-                                 │
-                                 ▼
-                    ┌──────────────────────────┐
-                    │        SCM EJB           │
-                    │                          │
-                    │ Business Services        │
-                    │ Timer Services            │
-                    │ Interceptors              │
-                    │ Transactions              │
-                    │ Security                  │
-                    │ Exception Handling        │
-                    └────────────┬─────────────┘
-                                 │
-                                 ▼
-                    ┌──────────────────────────┐
-                    │       SCM Core           │
-                    │                          │
-                    │ Entities                 │
-                    │ DTOs                     │
-                    │ Enums                    │
-                    │ Exceptions               │
-                    │ Shared Components        │
-                    └────────────┬─────────────┘
-                                 │
-                                 ▼
-                    ┌──────────────────────────┐
-                    │       MySQL Database     │
-                    │                          │
-                    │ Users / Roles             │
-                    │ Shipments                 │
-                    │ Inventory                 │
-                    │ Vendors                   │
-                    │ Audit Logs                │
-                    └──────────────────────────┘
